@@ -1,8 +1,7 @@
 //
 //  RecipeError.swift
-//  demo
 //
-//  Created by Hanitha Dhavileswarapu on 11/8/24.
+//  Created by Hanitha Raghava on 11/24/24.
 //
 
 import Foundation
@@ -12,4 +11,5 @@ enum NetworkError: Error {
     case invalidResponse
     case invalidData
     case unableToComplete
+    case noData
 }

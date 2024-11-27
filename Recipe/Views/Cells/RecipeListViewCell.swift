@@ -1,19 +1,16 @@
 //
 //  RecipeListViewCell.swift
-//  demo
 //
-//  Created by Hanitha Dhavileswarapu on 11/7/24.
+//  Created by Hanitha Raghava on 11/24/24.
 //
 
 import SwiftUI
 
 struct RecipeListViewCell: View {
-    
     let cusine: Recipe
-    
     var body: some View {
         HStack{
-            RecipeRemoteImage(urlString: cusine.photo_url_small!)
+            RecipeRemoteImage(urlString: cusine.photo_url_small)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 80, height: 80)
                 .cornerRadius(20)
@@ -22,7 +19,7 @@ struct RecipeListViewCell: View {
                 Text(cusine.name)
                     .font(.title3)
                     .fontWeight(.medium)
-                Text(cusine.cuisine! )
+                Text(cusine.cuisine ?? "" )
                     .foregroundColor(.secondary)
                     .fontWeight(.semibold)
             }
@@ -31,6 +28,4 @@ struct RecipeListViewCell: View {
     }
 }
 
-#Preview {
-    RecipeListViewCell(cusine: mockData.sampleData)
-}
+

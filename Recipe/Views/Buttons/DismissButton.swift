@@ -1,8 +1,7 @@
 //
 //  DismissButton.swift
-//  demo
 //
-//  Created by Hanitha Dhavileswarapu on 11/18/24.
+//  Created by Hanitha Raghava on 11/24/24.
 //
 
 import SwiftUI

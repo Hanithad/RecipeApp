@@ -17,48 +17,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2F20546A2CDD79C80032BF16 /* demo1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo1.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FC50DD52CEFA96900B93E55 /* demo1Testing.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demo1Testing.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F20546A2CDD79C80032BF16 /* RecipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FC50DD52CEFA96900B93E55 /* RecipeAppTesting.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeAppTesting.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		2F2054AF2CDD7A5C0032BF16 /* Exceptions for "demo" folder in "demo1" target */ = {
+		2F2054AF2CDD7A5C0032BF16 /* Exceptions for "Recipe" folder in "RecipeApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Assets.xcassets,
-				demoApp.swift,
 				Models/Recipe.swift,
 				Models/WebView.swift,
 				Networking/NetworkManager.swift,
 				Networking/RecipeAPIClient.swift,
-				TestUnit/MockNetworkService.swift,
+				RecipeApp.swift,
 				Utilities/Alerts/Alerts.swift,
 				Utilities/Errors/NetworkError.swift,
 				Utilities/Image/ImageLoader.swift,
-				"ViewModel/ViewModel Combine.swift",
 				Views/Buttons/DismissButton.swift,
 				Views/Cells/RecipeListViewCell.swift,
-				Views/RecipeDetailView/DetailListView.swift,
-				Views/RecipeDetailView/DetailSwiftUIView.swift,
+				Views/RecipeDetailView/RecipeDetailView.swift,
 				Views/RecipeListView/RecipeListView.swift,
 				Views/RecipeListView/RecipeViewModel.swift,
 			);
-			target = 2F2054692CDD79C80032BF16 /* demo1 */;
+			target = 2F2054692CDD79C80032BF16 /* RecipeApp */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		2F2054AA2CDD7A5C0032BF16 /* demo */ = {
+		2F2054AA2CDD7A5C0032BF16 /* Recipe */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				2F2054AF2CDD7A5C0032BF16 /* Exceptions for "demo" folder in "demo1" target */,
+				2F2054AF2CDD7A5C0032BF16 /* Exceptions for "Recipe" folder in "RecipeApp" target */,
 			);
-			path = demo;
+			path = Recipe;
 			sourceTree = "<group>";
 		};
-		2FC50DD62CEFA96900B93E55 /* demoTesting */ = {
+		2FC50DD62CEFA96900B93E55 /* RecipeAppTesting */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = demoTesting;
+			path = RecipeAppTesting;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -84,8 +81,8 @@
 		2F2054612CDD79C80032BF16 = {
 			isa = PBXGroup;
 			children = (
-				2F2054AA2CDD7A5C0032BF16 /* demo */,
-				2FC50DD62CEFA96900B93E55 /* demoTesting */,
+				2F2054AA2CDD7A5C0032BF16 /* Recipe */,
+				2FC50DD62CEFA96900B93E55 /* RecipeAppTesting */,
 				2F20546B2CDD79C80032BF16 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,8 +90,8 @@
 		2F20546B2CDD79C80032BF16 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F20546A2CDD79C80032BF16 /* demo1.app */,
-				2FC50DD52CEFA96900B93E55 /* demo1Testing.xctest */,
+				2F20546A2CDD79C80032BF16 /* RecipeApp.app */,
+				2FC50DD52CEFA96900B93E55 /* RecipeAppTesting.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,9 +99,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F2054692CDD79C80032BF16 /* demo1 */ = {
+		2F2054692CDD79C80032BF16 /* RecipeApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F20548E2CDD79C90032BF16 /* Build configuration list for PBXNativeTarget "demo1" */;
+			buildConfigurationList = 2F20548E2CDD79C90032BF16 /* Build configuration list for PBXNativeTarget "RecipeApp" */;
 			buildPhases = (
 				2F2054662CDD79C80032BF16 /* Sources */,
 				2F2054672CDD79C80032BF16 /* Frameworks */,
@@ -114,16 +111,16 @@
 			);
 			dependencies = (
 			);
-			name = demo1;
+			name = RecipeApp;
 			packageProductDependencies = (
 			);
 			productName = demo;
-			productReference = 2F20546A2CDD79C80032BF16 /* demo1.app */;
+			productReference = 2F20546A2CDD79C80032BF16 /* RecipeApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2FC50DD42CEFA96900B93E55 /* demo1Testing */ = {
+		2FC50DD42CEFA96900B93E55 /* RecipeAppTesting */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2FC50DDB2CEFA96900B93E55 /* Build configuration list for PBXNativeTarget "demo1Testing" */;
+			buildConfigurationList = 2FC50DDB2CEFA96900B93E55 /* Build configuration list for PBXNativeTarget "RecipeAppTesting" */;
 			buildPhases = (
 				2FC50DD12CEFA96900B93E55 /* Sources */,
 				2FC50DD22CEFA96900B93E55 /* Frameworks */,
@@ -135,13 +132,13 @@
 				2FC50DDA2CEFA96900B93E55 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				2FC50DD62CEFA96900B93E55 /* demoTesting */,
+				2FC50DD62CEFA96900B93E55 /* RecipeAppTesting */,
 			);
-			name = demo1Testing;
+			name = RecipeAppTesting;
 			packageProductDependencies = (
 			);
 			productName = demoTesting;
-			productReference = 2FC50DD52CEFA96900B93E55 /* demo1Testing.xctest */;
+			productReference = 2FC50DD52CEFA96900B93E55 /* RecipeAppTesting.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -163,7 +160,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2F2054652CDD79C80032BF16 /* Build configuration list for PBXProject "demo1" */;
+			buildConfigurationList = 2F2054652CDD79C80032BF16 /* Build configuration list for PBXProject "RecipeApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -177,8 +174,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F2054692CDD79C80032BF16 /* demo1 */,
-				2FC50DD42CEFA96900B93E55 /* demo1Testing */,
+				2F2054692CDD79C80032BF16 /* RecipeApp */,
+				2FC50DD42CEFA96900B93E55 /* RecipeAppTesting */,
 			);
 		};
 /* End PBXProject section */
@@ -220,7 +217,7 @@
 /* Begin PBXTargetDependency section */
 		2FC50DDA2CEFA96900B93E55 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2F2054692CDD79C80032BF16 /* demo1 */;
+			target = 2F2054692CDD79C80032BF16 /* RecipeApp */;
 			targetProxy = 2FC50DD92CEFA96900B93E55 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -419,7 +416,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/demo1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/demo1";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipeApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RecipeApp";
 			};
 			name = Debug;
 		};
@@ -437,14 +434,14 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/demo1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/demo1";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipeApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RecipeApp";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F2054652CDD79C80032BF16 /* Build configuration list for PBXProject "demo1" */ = {
+		2F2054652CDD79C80032BF16 /* Build configuration list for PBXProject "RecipeApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F20548C2CDD79C90032BF16 /* Debug */,
@@ -453,7 +450,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F20548E2CDD79C90032BF16 /* Build configuration list for PBXNativeTarget "demo1" */ = {
+		2F20548E2CDD79C90032BF16 /* Build configuration list for PBXNativeTarget "RecipeApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F20548F2CDD79C90032BF16 /* Debug */,
@@ -462,7 +459,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2FC50DDB2CEFA96900B93E55 /* Build configuration list for PBXNativeTarget "demo1Testing" */ = {
+		2FC50DDB2CEFA96900B93E55 /* Build configuration list for PBXNativeTarget "RecipeAppTesting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2FC50DDC2CEFA96900B93E55 /* Debug */,

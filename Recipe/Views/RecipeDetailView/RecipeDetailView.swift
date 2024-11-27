@@ -1,13 +1,14 @@
 //
-//  DetailListView.swift
+//  RecipeDetailView.swift
 //
-//  Created by Hanitha Dhavileswarapu on 11/16/24.
+//  Created by Hanitha Raghava on 11/24/24.
 //
 
 import SwiftUI
 
-struct DetailListView: View {
+struct RecipeDetailView: View {
     let detailRecipe: Recipe
+    
     @State private var showWebView = false
     @Binding var isShowingDetail: Bool
     
@@ -19,7 +20,7 @@ struct DetailListView: View {
     var body: some View {
         VStack{
             Spacer()
-            RecipeRemoteImage(urlString: detailRecipe.photo_url_large!)
+            RecipeRemoteImage(urlString: detailRecipe.photo_url_large)
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 300, height: 225)
                 .cornerRadius(10)
@@ -27,7 +28,7 @@ struct DetailListView: View {
                 Text(detailRecipe.name)
                     .font(.title2)
                     .fontWeight(.semibold)
-                Text("It's an \(detailRecipe.cuisine!) cuisine.")
+                Text("It's an \(detailRecipe.cuisine ?? "") cuisine.")
                     .multilineTextAlignment(.center)
                     .font(.body)
                     .padding()
@@ -39,7 +40,7 @@ struct DetailListView: View {
                         .foregroundColor(.white)
                         .cornerRadius(10)
                         .sheet(isPresented: $showWebView) {
-                            WebView(url: detailRecipe.url!)
+                            WebView(url: URL(string: detailRecipe.youtube_url!)!)
                         }
                 }
                 Spacer()
@@ -59,6 +60,4 @@ struct DetailListView: View {
     }
 }
 
-#Preview {
-    DetailListView(detailRecipe: mockData.sampleData, isShowingDetail: .constant(true))
-}
+

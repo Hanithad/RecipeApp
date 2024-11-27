@@ -242,36 +242,6 @@
             endingLineNumber = "20"
             landmarkName = "testFetchRecipes_Success()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "535580C3-95F3-4771-92CC-54D0D45D400D - 12cf27ed7a7405eb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "demoTesting.TestDemo.testFetchRecipes_Success() -&gt; ()"
-                  moduleName = "demoTesting"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hanithadhavileswarapu/Desktop/test%20ui/duplicate%20demo/demoTesting/RecipeViewModelTest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24">
-               </Location>
-               <Location
-                  uuid = "535580C3-95F3-4771-92CC-54D0D45D400D - 22faa959ea70d3b1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in demoTesting.TestDemo.testFetchRecipes_Success() -&gt; ()"
-                  moduleName = "demoTesting"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hanithadhavileswarapu/Desktop/test%20ui/duplicate%20demo/demoTesting/RecipeViewModelTest.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -287,6 +257,70 @@
             startingLineNumber = "28"
             endingLineNumber = "28"
             landmarkName = "fetchData(urlRequest:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B28E5B64-23B5-4C99-862D-05E8ED886E38"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RecipeAppTesting/RecipeViewModelTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "testFetchRecipes_Success()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "11522D72-9577-4C65-B3A5-837A7383E1E1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Recipe/Networking/RecipeAPIClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "getRecipes(recipeUrl:completed:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "29771574-9887-4DA0-A1EE-28B3C66E0319"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RecipeAppTesting/RecipeViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "testFetchRecipesData_Failure_malformed()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2742C10C-B0C0-4A6F-B1A9-D3830D1C1A06"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Recipe/Views/RecipeListView/RecipeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "fetchRecipes()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

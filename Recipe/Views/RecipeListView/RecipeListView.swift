@@ -1,8 +1,7 @@
 //
 //  ContentView.swift
-//  demo
 //
-//  Created by Hanitha Dhavileswarapu on 11/7/24.
+//  Created by Hanitha Raghava on 11/24/24.
 //
 
 import SwiftUI
@@ -12,9 +11,6 @@ struct RecipeListView: View {
     @StateObject var viewModel = RecipeViewModel(networkManager: NetworkManager.shared)
     @State private var selectedItem: String?
     @State private var isShowing = false
-    //How to show Alert on swiftUI
-    //Elegently show progress view
-    //Navigation to detail
     var body: some View {
         NavigationView{
             ZStack{
@@ -24,7 +20,7 @@ struct RecipeListView: View {
                         .bold()
                         .foregroundColor(.primary)
                     Spacer()
-                    List(viewModel.allRecipes){ cusine in
+                    List(viewModel.allRecipes ?? []){ cusine in
                         RecipeListViewCell(cusine: cusine)
                             .onTapGesture {
                                 viewModel.selectedRecipe = cusine
@@ -32,14 +28,13 @@ struct RecipeListView: View {
                             }
                     }
                     .listStyle(.plain)
-                    //.disabled(viewModel.isShowingDetail)
                 }
                 .onAppear{
                     viewModel.fetchRecipes()
                 }
                 .blur(radius: viewModel.isShowingDetail ? 20 : 0)
-                if viewModel.isShowingDetail {
-                    DetailListView(detailRecipe: viewModel.selectedRecipe!, isShowingDetail: $viewModel.isShowingDetail)
+                if viewModel.isShowingDetail, let selectedRecipe = viewModel.selectedRecipe {
+                    RecipeDetailView(detailRecipe: selectedRecipe, isShowingDetail: $viewModel.isShowingDetail)
                 }
                 
                 if viewModel.isLoading {

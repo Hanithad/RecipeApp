@@ -1,8 +1,7 @@
 //
 //  NetworkManager.swift
-//  demo
 //
-//  Created by Hanitha Dhavileswarapu on 11/8/24.
+//  Created by Hanitha Raghava on 11/24/24.
 //
 
 import Foundation
@@ -15,11 +14,11 @@ class NetworkManager: NetworkManagerProtocol {
     
     static let shared = NetworkManager()
     init() {}
-
-    func fetchData(urlRequest: URLRequest, completion : @escaping (Result<Data, NetworkError>) -> Void) {
     
+    func fetchData(urlRequest: URLRequest, completion : @escaping (Result<Data, NetworkError>) -> Void) {
+        
         let task = URLSession.shared.dataTask(with: urlRequest) {  data, response, error in
-            if let error = error {
+            if error != nil {
                 completion(.failure(NetworkError.invalidResponse))
                 return
             }
@@ -33,6 +32,6 @@ class NetworkManager: NetworkManagerProtocol {
             }
             completion(.success(data))
         }
-        task.resume() //Why is this used?
+        task.resume()
     }
 }

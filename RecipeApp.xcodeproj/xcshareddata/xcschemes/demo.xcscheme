@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2F2054692CDD79C80032BF16"
-               BuildableName = "demo1.app"
-               BlueprintName = "demo1"
-               ReferencedContainer = "container:demo1.xcodeproj">
+               BuildableName = "RecipeApp.app"
+               BlueprintName = "RecipeApp"
+               ReferencedContainer = "container:RecipeApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -38,7 +38,7 @@
                BlueprintIdentifier = "2F2054792CDD79C90032BF16"
                BuildableName = "demoTests.xctest"
                BlueprintName = "demoTests"
-               ReferencedContainer = "container:demo1.xcodeproj">
+               ReferencedContainer = "container:RecipeApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "2F2054832CDD79C90032BF16"
                BuildableName = "demoUITests.xctest"
                BlueprintName = "demoUITests"
-               ReferencedContainer = "container:demo1.xcodeproj">
+               ReferencedContainer = "container:RecipeApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -60,7 +60,7 @@
                BlueprintIdentifier = "2FC50DBA2CEFA78800B93E55"
                BuildableName = "demoTestproject.xctest"
                BlueprintName = "demoTestproject"
-               ReferencedContainer = "container:demo1.xcodeproj">
+               ReferencedContainer = "container:RecipeApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -71,7 +71,7 @@
                BlueprintIdentifier = "2FC50DC72CEFA84900B93E55"
                BuildableName = "demoTest.xctest"
                BlueprintName = "demoTest"
-               ReferencedContainer = "container:demo1.xcodeproj">
+               ReferencedContainer = "container:RecipeApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -80,9 +80,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2FC50DD42CEFA96900B93E55"
-               BuildableName = "demo1Testing.xctest"
-               BlueprintName = "demo1Testing"
-               ReferencedContainer = "container:demo1.xcodeproj">
+               BuildableName = "RecipeAppTesting.xctest"
+               BlueprintName = "RecipeAppTesting"
+               ReferencedContainer = "container:RecipeApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -102,9 +102,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F2054692CDD79C80032BF16"
-            BuildableName = "demo1.app"
-            BlueprintName = "demo1"
-            ReferencedContainer = "container:demo1.xcodeproj">
+            BuildableName = "RecipeApp.app"
+            BlueprintName = "RecipeApp"
+            ReferencedContainer = "container:RecipeApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -119,9 +119,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2F2054692CDD79C80032BF16"
-            BuildableName = "demo1.app"
-            BlueprintName = "demo1"
-            ReferencedContainer = "container:demo1.xcodeproj">
+            BuildableName = "RecipeApp.app"
+            BlueprintName = "RecipeApp"
+            ReferencedContainer = "container:RecipeApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
